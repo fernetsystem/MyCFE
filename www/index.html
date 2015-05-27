@@ -4,7 +4,8 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 
+        phonegap create MyCFE com.mycfe.cfeOffi CFE-->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <!--CSS para agregar tema de aplicacion-->
@@ -22,17 +23,18 @@
     <body>
         <div data-role="page" id="page">
         <div data-role="header">
-            <h1>Page One</h1>
+            <h1>Menú</h1>
         </div>
         <div data-role="content">   
             <ul data-role="listview">
-                <li><a href="#page2">Page Two</a></li>
-                <li><a href="#page3">Page Three</a></li>
-                <li><a href="#page4">Page Four</a></li>
+                <li><a href="#page2">Consulta de Saldo</a></li>
+                <li><a href="#page3">Pago en línea </a></li>
+                <li><a href="#page4">Contrato nuevo</a></li>
+                <li><a href="#page5">Tienda en línea</a></li>jlkmc fc
             </ul>       
         </div>
-        <div data-role="footer">
-            <h4>Page Footer</h4>
+        <div data-role="footer" data-position="fixed">
+            <h4>CFE</h4>
         </div>
     </div>
 
@@ -47,10 +49,12 @@
                 Password:
                 <input type="password" data-clear-btn="true" name="password-2" id="password-2" value="" autocomplete="off" placeholder="Ingrese su password">
                 <input type="button" value="Ingresar">
+                <label><a href="#page"><span>No estoy registrado</span></a></label>
+                <label><a href="#page"><span>Olvide mi contraseña</span></a></label>
             </form>
         </div>
-        <div data-role="footer">
-            <h4>Page Footer</h4>
+        <div data-role="footer" data-position="fixed">
+            <h4>CFE</h4>
         </div>
     </div>
 
@@ -61,8 +65,8 @@
         <div data-role="content">   
             Content     
         </div>
-        <div data-role="footer">
-            <h4>Page Footer</h4>
+        <div data-role="footer" data-position="fixed">
+            <h4>CFE</h4>
         </div>
     </div>
 
@@ -73,8 +77,8 @@
         <div data-role="content">   
             Content     
         </div>
-        <div data-role="footer">
-            <h4>Page Footer</h4>
+        <div data-role="footer" data-position="fixed">
+            <h4>CFE</h4>
         </div>
     </div>
     </body>
