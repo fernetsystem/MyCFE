@@ -20,10 +20,15 @@
         <!--ADD JAVASCRIPT of JQueryMobile-->
         <script type="text/javascript" src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
         <title>CFE</title>
+        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+
     </head>
-    <body>
+    <body onload="onBodyLoad">
+
+    <!--Pagina de login-->
     <div data-role="page" id="page">
-        <div data-role="header">
+        <div data-role="header" class="linesGreen">
             <h1>Login</h1>
         </div>
         <div data-role="content">   
@@ -38,30 +43,34 @@
                 <label class="centra"><a href="#page5"><span>Olvide mi contraseña</span></a></label>
             </form>
         </div>
-        <div data-role="footer" data-position="fixed">
+        <div data-role="footer" data-position="fixed" class="linesGreen">
             <h4>CFE</h4>
         </div>
     </div>
 
+    <!--MENU-->
     <div data-role="page" id="page2">
-        <div data-role="header">
+        <div data-role="header" class="linesGreen">
             <h1>Menú</h1>
         </div>
         <div data-role="content">   
+            <div class="altura">
             <ul data-role="listview">
-                <li><a href="#page2">Consulta de Saldo</a></li>
-                <li><a href="#page4">Pago en línea </a></li>
-                <li><a href="#page4">Contrato nuevo</a></li>
-                <li><a href="#Tienda">Tienda en línea</a></li>
+                <li><a href="#page2" class="linesWhite">Consulta de Saldo</a></li>
+                <li><a href="#page4" class="linesWhite">Pago en línea </a></li>
+                <li><a href="#page4" class="linesWhite">Contrato nuevo</a></li>
+                <li><a href="#Tienda" class="linesWhite">Tienda en línea</a></li>
             </ul>       
+            </div>
         </div>
-        <div data-role="footer" data-position="fixed">
+        <div data-role="footer" data-position="fixed" class="linesGreen">
             <h4>CFE</h4>
         </div>
     </div>
 
+    <!--Registro de usuario-->
     <div data-role="page" id="page3">
-        <div data-role="header">
+        <div data-role="header" class="linesGreen">
             <h1>Registro de usuario</h1>
         </div>
         <div data-role="content">   
@@ -79,20 +88,24 @@
                 <input type="submit" value="Registrar">
             </form>     
         </div>
-        <div data-role="footer" data-position="fixed">
+        <div data-role="footer" data-position="fixed" class="linesGreen">
             <h4>CFE</h4>
         </div>
     </div>
 
+    <!--Pago en linea-->
     <div data-role="page" id="page4">
-        <div data-role="header">
+        <div data-role="header" class="linesGreen">
             <h1>Pago en línea</h1>
+            <div class="ui-btn-left">
+                <a href="#" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back">volver</a>
+            </div>
         </div>
         <div data-role="content">   
             <div class="ui-field-contain">
                 <select name="select-custom-21" id="select-custom-21" data-native-menu="false">
                     <option value="choose-one" data-placeholder="true">Escoje tu tarjeta</option>
-                    <option value="1">Visa</option>
+                    <option value="1"> Visa</option>
                     <option value="2">MasterCard</option>
                     <option value="3">American Express</option>
                 </select>
@@ -111,13 +124,15 @@
                 
             </form>     
         </div>
-        <div data-role="footer" data-position="fixed">
+        <div data-role="footer" data-position="fixed" class="linesGreen">
             <h4>CFE</h4>
         </div>
     </div>
 
+
+    <!--Olvido su contraseña-->
     <div data-role="page" id="page5">
-        <div data-role="header">
+        <div data-role="header" class="linesGreen">
             <h1>Recuperar contraseña</h1>
         </div>
         <div data-role="content">   
@@ -125,11 +140,13 @@
             <input type="email" name="text-6" id="text-6" value="" placeholder="Ingrese su e-mail">
             <a href="#page" class="ui-btn">Aceptar</a>
         </div>
-        <div data-role="footer" data-position="fixed">
+        <div data-role="footer" data-position="fixed" class="linesGreen">
             <h4>CFE</h4>
         </div>
     </div>
 
+
+    <!--Tienda online-->
     <div data-role="page" id="Tienda" data-theme="a">
              <div data-role="header" data-theme="a">    
                 <h1> Tienda </h1>    
