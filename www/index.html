@@ -22,7 +22,28 @@
         <title>CFE</title>
     </head>
     <body>
-        <div data-role="page" id="page">
+    <div data-role="page" id="page">
+        <div data-role="header">
+            <h1>Login</h1>
+        </div>
+        <div data-role="content">   
+            <form action="#page3" method="get">
+                Usuario:
+                <input type="text" name="text-6" id="text-6" value="" placeholder="Ingrese su usuario">
+                Contraseña:
+                <input type="password" data-clear-btn="true" name="password-2" id="password-2" value="" autocomplete="off" placeholder="Ingrese su contraseña">
+                <!--<input type="submit" value="Ingresar">-->
+                <a href="#page2" class="ui-btn">Ingresar</a>
+                <label class="centra"><a href="#page3"><span>No estoy registrado</span></a></label>
+                <label class="centra"><a href="#page2"><span>Olvide mi contraseña</span></a></label>
+            </form>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>CFE</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="page2">
         <div data-role="header">
             <h1>Menú</h1>
         </div>
@@ -39,32 +60,24 @@
         </div>
     </div>
 
-    <div data-role="page" id="page2">
-        <div data-role="header">
-            <h1>Login</h1>
-        </div>
-        <div data-role="content">   
-            <form action="login.html" method="get">
-                Usuario:
-                <input type="text" name="text-6" id="text-6" value="" placeholder="Ingrese su usuario">
-                Password:
-                <input type="password" data-clear-btn="true" name="password-2" id="password-2" value="" autocomplete="off" placeholder="Ingrese su password">
-                <input type="submit" value="Ingresar">
-                <label class="centra"><a href="#page"><span>No estoy registrado</span></a></label>
-                <label class="centra"><a href="#page"><span>Olvide mi contraseña</span></a></label>
-            </form>
-        </div>
-        <div data-role="footer" data-position="fixed">
-            <h4>CFE</h4>
-        </div>
-    </div>
-
     <div data-role="page" id="page3">
         <div data-role="header">
-            <h1>Page Three</h1>
+            <h1>Registro de usuario</h1>
         </div>
         <div data-role="content">   
-            Content     
+             <form action="#page" method="get">
+                Nombre completo:
+                <input type="text" name="text-6" id="text-6" value="" placeholder="Ingrese su nombre completo">
+                No. de servicio (RPU):
+                <input type="text" name="text-6" id="text-6" value="" placeholder="Ingrese su RPU">
+                Contraseña:
+                <input type="password" data-clear-btn="true" name="password-2" id="password-2" value="" autocomplete="off" placeholder="Ingrese su contraseña">
+                Confirme su contraseña:
+                <input type="password" data-clear-btn="true" name="password-2" id="password-2" value="" autocomplete="off" placeholder="confirme su contraseña">
+                E-Mail:
+                <input type="email" name="text-6" id="text-6" value="" placeholder="Ingrese su e-mail">
+                <input type="submit" value="Registrar">
+            </form>     
         </div>
         <div data-role="footer" data-position="fixed">
             <h4>CFE</h4>
