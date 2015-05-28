@@ -6,3 +6,27 @@
 .underline{
 	text-decoration: none;
 }
+
+.imagenSh{
+	width:30px;
+	height: 25px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.cajaCentrada{
+	display: inline-block;
+}
+
+.altura{
+	min-height: 300px;
+	text-align: center;
+	margin: 0px;
+}
+
+.linesGreen{
+	min-height: 50px;
+}
+.linesWhite{
+	min-height: 60px;
+}
