@@ -69,6 +69,7 @@
     <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
     <gap:plugin name="org.apache.cordova.device-motion" version="0.2.10" />
+    <gap:plugin name="org.apache.cordova.dialogs"/>
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
