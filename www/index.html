@@ -35,7 +35,7 @@
                 <!--<input type="submit" value="Ingresar">-->
                 <a href="#page2" class="ui-btn">Ingresar</a>
                 <label class="centra"><a href="#page3"><span>No estoy registrado</span></a></label>
-                <label class="centra"><a href="#page2"><span>Olvide mi contraseña</span></a></label>
+                <label class="centra"><a href="#page5"><span>Olvide mi contraseña</span></a></label>
             </form>
         </div>
         <div data-role="footer" data-position="fixed">
@@ -50,9 +50,9 @@
         <div data-role="content">   
             <ul data-role="listview">
                 <li><a href="#page2">Consulta de Saldo</a></li>
-                <li><a href="#page3">Pago en línea </a></li>
+                <li><a href="#page4">Pago en línea </a></li>
                 <li><a href="#page4">Contrato nuevo</a></li>
-                <li><a href="#page5">Tienda en línea</a></li>
+                <li><a href="#Tienda">Tienda en línea</a></li>
             </ul>       
         </div>
         <div data-role="footer" data-position="fixed">
@@ -86,14 +86,84 @@
 
     <div data-role="page" id="page4">
         <div data-role="header">
-            <h1>Page Four</h1>
+            <h1>Pago en línea</h1>
         </div>
         <div data-role="content">   
-            Content     
+            <div class="ui-field-contain">
+                <select name="select-custom-21" id="select-custom-21" data-native-menu="false">
+                    <option value="choose-one" data-placeholder="true">Escoje tu tarjeta</option>
+                    <option value="1">Visa</option>
+                    <option value="2">MasterCard</option>
+                    <option value="3">American Express</option>
+                </select>
+            </div>
+            <form action="" method="get">
+                Número de tarjeta:
+                <input type="password" data-clear-btn="true" name="password-2" id="password-2" value="" autocomplete="off" placeholder="000000000000000000
+">
+                Codigo:
+                <input type="password" data-clear-btn="true" name="password-2" id="password-2" value="" autocomplete="off" placeholder="X X X X">
+                Titular de la tarjeta:
+                <input type="text" name="text-6" id="text-6" value="" placeholder="Ingrese su nombre completo">
+                E-Mail:
+                <input type="email" name="text-6" id="text-6" value="" placeholder="Ingrese su e-mail">
+                <a href="#page2" class="ui-btn">Realizar pago</a>
+                
+            </form>     
         </div>
         <div data-role="footer" data-position="fixed">
             <h4>CFE</h4>
         </div>
+    </div>
+
+    <div data-role="page" id="page5">
+        <div data-role="header">
+            <h1>Recuperar contraseña</h1>
+        </div>
+        <div data-role="content">   
+            E-Mail:
+            <input type="email" name="text-6" id="text-6" value="" placeholder="Ingrese su e-mail">
+            <a href="#page" class="ui-btn">Aceptar</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>CFE</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="Tienda" data-theme="a">
+             <div data-role="header" data-theme="a">    
+                <h1> Tienda </h1>    
+             </div>      
+
+            <form class="ui-filterable">
+                <input id="rich-autocomplete-input" data-type="search" placeholder="Busca productos...">
+            </form>
+            <ul data-role="listview" data-filter="true"  data-input="#rich-autocomplete-input">
+                <li data-filtertext="foco ahorador"><a href="#">
+                         <img src="img/1.jpg">
+                         <h2>foco</h2>
+                         <font color="red"><b>$ 39</b></font>
+                         <p>poco consumo</p>
+                </a>
+                </li>
+                <li data-filtertext="metal refri puerta">
+                    <a href="#">
+                         <img src="img/2.jpg">
+                         <h2>Refrigerador</h2>
+                         <font color="red"><b>$ 6,700</b></font>
+                         <p>Metalico</p>
+                    </a>
+                </li>
+                <li data-filtertext="energia generador panel electricidad solar"><a href="#">
+                    <img src="img/3.jpg">
+                <h2>Panel solar</h2>
+                <font color="red"><b>$ 4,900</b></font>
+                <p>Generador</p></a>
+                </li>
+            </ul>
+            <div data-role="footer" data-position="fixed">
+            <h4>CFE</h4>
+            </div>
     </div>
     </body>
 </html>
