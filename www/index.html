@@ -181,20 +181,7 @@
             <h4>CFE</h4>
             </div>
     </div>
-    <!-- Cuado entre -->
-    <div data-role="page" id="home">
-        <div data-role="header" class="linesGreen">
-            <h1>BIENVENIDO</h1>
-        </div>
-        <div data-role="content">   
-            COMO ESTAS:
-            <input type="email" name="text-6" id="text-6" value="" placeholder="Ingrese su e-mail">
-            <a href="#page" class="ui-btn">Aceptar</a>
-        </div>
-        <div data-role="footer" data-position="fixed" class="linesGreen">
-            <h4>CFE</h4>
-        </div>
-    </div>
+
     <script>
 
 $('#formulario').submit(function() { 
@@ -214,7 +201,7 @@ $('#formulario').submit(function() {
         if(respuestaServer.validacion == "ok"){
           
             /// si la validacion es correcta, muestra la pantalla "home"
-            $.mobile.changePage("#home")
+            $.mobile.changePage("#page2")
           
         }else{
           
